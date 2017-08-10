@@ -1,0 +1,34 @@
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\bin\Debug\Calender Projects.exe.config
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\bin\Debug\Calender Projects.exe
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\bin\Debug\Calender Projects.pdb
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\Calender.csprojResolveAssemblyReference.cache
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\MainWindow.g.cs
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\App.g.cs
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\Calender Projects_MarkupCompile.cache
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\Calender Projects_MarkupCompile.lref
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\MainWindow.baml
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\Calender Projects.g.resources
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\Calender_Projects.Properties.Resources.resources
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\Calender.csproj.GenerateResource.Cache
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\Calender Projects.exe
+c:\users\law\documents\visual studio 2017\Projects\Calender Projects\Calender Projects\obj\Debug\Calender Projects.pdb
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\bin\Debug\Calender Projects.exe.config
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\bin\Debug\Calender Projects.exe
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\bin\Debug\Calender Projects.pdb
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\Calender.csprojResolveAssemblyReference.cache
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\CalendarWindow.g.cs
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\App.g.cs
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\Calender Projects_MarkupCompile.cache
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\Calender Projects_MarkupCompile.lref
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\CalendarWindow.baml
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\Calender Projects.g.resources
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\Calender_Projects.Properties.Resources.resources
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\Calender.csproj.GenerateResource.Cache
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\Calender Projects.exe
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\Calender Projects.pdb
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\CreateEventWindow.g.cs
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\ViewEventWindow.g.cs
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\ManageListsWindow.g.cs
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\CreateEventWindow.baml
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\ViewEventWindow.baml
+C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\ManageListsWindow.baml
