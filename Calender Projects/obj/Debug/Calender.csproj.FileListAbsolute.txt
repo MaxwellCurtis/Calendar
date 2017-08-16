@@ -32,3 +32,16 @@ C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\M
 C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\CreateEventWindow.baml
 C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\ViewEventWindow.baml
 C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\ManageListsWindow.baml
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\Calender.csprojResolveAssemblyReference.cache
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\CalendarWindow.g.cs
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\CreateEventWindow.g.cs
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\ViewEventWindow.g.cs
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\ManageListsWindow.g.cs
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\UserListWindow.g.cs
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\UserChecklistWindow.g.cs
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\App.g.cs
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\Calender Projects_MarkupCompile.cache
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\Calender Projects_MarkupCompile.lref
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\Calender Projects.exe
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\Calender Projects.pdb
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\bin\Debug\Calender Projects.exe.config

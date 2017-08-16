@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\obj\Debug\
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\obj\Debug\
 Calender_Projects
 none
 false
 DEBUG;TRACE
-C:\Users\Law\Documents\Visual Studio 2017\Projects\Calender Projects\App.xaml
-4-898496095
+C:\Users\A Guy Named Tre\Desktop\calender\Calendar\Calender Projects\App.xaml
+6-403400172
 
-8222522035
-13-1454942768
-CalendarWindow.xaml;CreateEventWindow.xaml;ViewEventWindow.xaml;ManageListsWindow.xaml;
+13-1260762573
+131569487696
+CalendarWindow.xaml;CreateEventWindow.xaml;ViewEventWindow.xaml;ManageListsWindow.xaml;UserListWindow.xaml;UserChecklistWindow.xaml;
 
-False
+True
 
