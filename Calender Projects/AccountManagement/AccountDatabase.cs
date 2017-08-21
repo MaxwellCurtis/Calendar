@@ -11,8 +11,8 @@ namespace Calender_Projects.AccountManagement
 {
     public class AccountDatabase
     {
+        private FileStream fs; 
             private List<String> account = new List<String>();
-            private FileStream fs = new FileStream("c:/dev/cds.txt", FileMode.Open);
 
             public AccountDatabase()
             {
@@ -21,22 +21,25 @@ namespace Calender_Projects.AccountManagement
 
             public void AddAccount()
             {
+            fs = new FileStream("cds.txt", FileMode.Open);
                 bool keepGoing = true;
-
                 while (keepGoing)
                 {
                     try
                     {
                         //Reads the File Database//
+
                         IFormatter formatter = new BinaryFormatter();
                         Account d = (Account)formatter.Deserialize(fs);
                         String tre = d.ToString();
                         account.Add(tre);
+                        
                     }
-                    catch (SerializationException e)
+                    catch (SerializationException)
                     {
+             
                         keepGoing = false;
-                    }
+                     }
                 }
                 //Request for Registry//
                 bool isNotValid = true;

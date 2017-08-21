@@ -44,5 +44,10 @@ namespace Calender_Projects
         {
 
         }
+
+        private void AddEvent_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

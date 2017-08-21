@@ -17,11 +17,26 @@ namespace Calender_Projects
     /// <summary>
     /// Interaction logic for Window5.xaml
     /// </summary>
-    public partial class Window5 : Window
+    public partial class UserChecklistWindow : Window
     {
-        public Window5()
+        public UserChecklistWindow()
         {
             InitializeComponent();
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddItemButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

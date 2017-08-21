@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Calender_Projects"
         mc:Ignorable="d"
         Title="Calender Window" Height="600" Width="1080">
+    
     <Window.Resources>
         <Style TargetType="Label">
             <Setter Property="Label.FontSize" Value=" 13"/>
@@ -15,6 +16,7 @@
             <Setter Property="Button.Width" Value="120"/>
         </Style>
     </Window.Resources>
+    
     <Grid Background="LightSkyBlue">
         <DockPanel Margin="0,0,270,452.5">
             <Label   Content="Month"
@@ -23,7 +25,8 @@
                    FontSize="28"/>
             <Button x:Name="AddEvent" 
                     Content="+ Add Event"
-                    Margin="0 -70 450 0"/>
+                    Margin="0 -70 450 0"
+                    Click="AddEvent_Click"/>
         </DockPanel>
         <DockPanel Margin="0,58,271,453.5">
             <Label Content=" Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec"

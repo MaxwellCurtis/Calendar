@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Law\Documents\Visual Studio 2017\Projects\Calendar\Calender Projects\App.xaml
-8-113693526
+8-1195967327
 
-18645340156
+181003128096
 131569487696
-CalendarWindow.xaml;CreateEventWindow.xaml;LoginWindow.xaml;SignUpWindow.xaml;ViewEventWindow.xaml;ManageListsWindow.xaml;UserListWindow.xaml;UserChecklistWindow.xaml;
+CalendarWindow.xaml;CreateEventPage.xaml;LoginWindow.xaml;SignUpWindow.xaml;ViewEventWindow.xaml;ManageListsWindow.xaml;UserListWindow.xaml;UserChecklistWindow.xaml;
 
-False
+True
 
