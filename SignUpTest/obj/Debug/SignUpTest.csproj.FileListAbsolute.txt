@@ -1,0 +1,14 @@
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\bin\Debug\SignUpTest.exe.config
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\bin\Debug\SignUpTest.exe
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\bin\Debug\SignUpTest.pdb
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest.csprojResolveAssemblyReference.cache
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\MainWindow.g.cs
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\App.g.cs
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest_MarkupCompile.cache
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest_MarkupCompile.lref
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\MainWindow.baml
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest.g.resources
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest.Properties.Resources.resources
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest.csproj.GenerateResource.Cache
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest.exe
+c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest.pdb
