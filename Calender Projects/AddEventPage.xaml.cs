@@ -15,18 +15,24 @@ using System.Windows.Shapes;
 namespace Calender_Projects
 {
     /// <summary>
-    /// Interaction logic for Window3.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class CreateEventPage : Page
     {
-        public Window3()
+        public CreateEventPage()
         {
             InitializeComponent();
         }
 
-        private void GoBackButton_Click(object sender, RoutedEventArgs e)
+        private void SaveEvent_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void GoBackEvent_Click(object sender, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("CalenderPage.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
         }
     }
 }

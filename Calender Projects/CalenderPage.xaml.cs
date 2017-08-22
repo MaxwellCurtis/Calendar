@@ -16,36 +16,28 @@ using System.Windows.Shapes;
 namespace Calender_Projects
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CalenderWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CalenderWindow : Page
     {
-        public MainWindow()
+        public CalenderWindow()
         {
             InitializeComponent();
         }
 
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        private void AddEvent_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void SaveList_Click(object sender, RoutedEventArgs e)
-        {
-
+            Uri uri = new Uri("AddEventPage.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
         }
 
         private void ManageList_Click(object sender, RoutedEventArgs e)
         {
-
+            Uri uri1 = new Uri("ManageListsPage.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri1);
         }
 
-        private void AddEvent_Click(object sender, RoutedEventArgs e)
+        private void AddList_Click(object sender, RoutedEventArgs e)
         {
 
         }

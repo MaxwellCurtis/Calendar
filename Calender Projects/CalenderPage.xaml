@@ -1,13 +1,14 @@
-﻿<Window x:Class="Calender_Projects.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Calender_Projects"
-        mc:Ignorable="d"
-        Title="Calender Window" Height="600" Width="1080">
-    
-    <Window.Resources>
+﻿<Page x:Class="Calender_Projects.CalenderWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Calender_Projects"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1080"
+      Title="CalenderWindow">
+
+    <Page.Resources>
         <Style TargetType="Label">
             <Setter Property="Label.FontSize" Value=" 13"/>
         </Style>
@@ -15,20 +16,20 @@
             <Setter Property="Button.Height" Value="30"/>
             <Setter Property="Button.Width" Value="120"/>
         </Style>
-    </Window.Resources>
-    
-    <Grid Background="LightSkyBlue">
+    </Page.Resources>
+
+    <Grid Background="LightBlue">
         <DockPanel Margin="0,0,270,452.5">
             <Label   Content="Month"
-                     FontSize="28"/>
+                     FontSize="28" Margin="0,14,0,-0.5"/>
             <Label Content="Year"
-                   FontSize="28"/>
+                   FontSize="28" Margin="0,14,0,-0.5" Width="64"/>
             <Button x:Name="AddEvent" 
                     Content="+ Add Event"
-                    Margin="0 -70 450 0"
+                    Margin="0 0 450 0"
                     Click="AddEvent_Click"/>
         </DockPanel>
-        <DockPanel Margin="0,58,271,453.5">
+        <DockPanel Margin="0,68,271,0">
             <Label Content=" Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec"
                    FontSize="27"/>
         </DockPanel>
@@ -70,9 +71,7 @@
             <Label Content="List:" 
                    Margin="0,0,133,0"/>
             <CheckBox Height="16" 
-                      Margin="35 -25 110 0"
-                      Checked="CheckBox_Checked"
-                      Unchecked="CheckBox_Unchecked"/>
+                      Margin="35 -25 110 0"/>
             <Label Content="Checklist:"
                    Margin="60 -27 0 0"/>
             <CheckBox Height="16"
@@ -89,8 +88,8 @@
             <Calendar Height="170" Margin="0,0,-3,0"/>
             <Button x:Name="SaveList" 
                     Content="+ Add List"
-                    Click="SaveList_Click"
-                    Margin="0 10 0 0"/>
+                    Click="AddList_Click"
+                    Margin="0 0 0 0"/>
         </StackPanel>
-    </Grid >
-</Window>
+    </Grid>
+</Page>

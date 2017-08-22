@@ -57,9 +57,14 @@
     </ApplicationDefinition>
     <Compile Include="AccountManagement\AccountDatabase.cs" />
     <Compile Include="AccountManagement\Account.cs" />
-    <Compile Include="CreateEventPage.xaml.cs">
-      <DependentUpon>CreateEventPage.xaml</DependentUpon>
+    <Compile Include="AddEventPage.xaml.cs">
+      <DependentUpon>AddEventPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CalenderPage.xaml.cs">
+      <DependentUpon>CalenderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IMainWindow.cs" />
+    <Compile Include="IManageListsPage.cs" />
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
@@ -69,8 +74,8 @@
     <Compile Include="ViewEventWindow.xaml.cs">
       <DependentUpon>ViewEventWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ManageListsWindow.xaml.cs">
-      <DependentUpon>ManageListsWindow.xaml</DependentUpon>
+    <Compile Include="ManageListsPage.xaml.cs">
+      <DependentUpon>ManageListsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserListWindow.xaml.cs">
       <DependentUpon>UserListWindow.xaml</DependentUpon>
@@ -78,7 +83,11 @@
     <Compile Include="UserChecklistWindow.xaml.cs">
       <DependentUpon>UserChecklistWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="CalendarWindow.xaml">
+    <Page Include="CalenderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -86,11 +95,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CalendarWindow.xaml.cs">
-      <DependentUpon>CalendarWindow.xaml</DependentUpon>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="CreateEventPage.xaml">
+    <Page Include="AddEventPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -106,7 +115,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ManageListsWindow.xaml">
+    <Page Include="ManageListsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
