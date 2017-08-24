@@ -1,5 +1,8 @@
-﻿using System;
+﻿using SignUpTest;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -16,45 +19,40 @@ using System.Windows.Shapes;
 
 namespace SignUpTest
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-        public List<string> userNames = new List<string>();
-        public List<Account> AccountList = new List<Account>();
-
         public void SignUpTest()
         {
             InitializeComponent();
         }
         public void accountData()
         {
-            string username = UsernameTextBox.Text;
-            string passWord = PasswordAccBox.Password;
-            Account newAcc = new Account();
+            using (SqlConnection connection = new SqlConnection())
+            {
+                connection.ConnectionString =
+                "Data Source=calenderserver.database.windows.net;" +
+                "Initial Catalog=Calender;" +
+                "User id=MCurtis;" +
+                "Password=Rock1000;";
+                connection.Open();
 
-            if (userNames.Contains(username))
-            {
-                messages.Text = "Username is taken, try again";
-            }
-            else
-            {
-                if (username.Length <= 4)
+                SqlCommand command = new SqlCommand("Select * FROM [Users] WHERE [UserName] = @username", connection);
+                command.Parameters.AddWithValue("@username", UsernameTextBox.Text);
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read() == true)
                 {
-                    messages.Text = "Username is too short";
+                    messages.Text = "username is taken";
                 }
-                else if (passWord.Length <= 6)
-                {
-                    messages.Text = "Password is too short";
-                }
-                else
-                {
-                    messages.Text = "Account Created";
-                    Account acc = new Account(username, passWord);
-                    WriteToFile("C:\\Users\\krazykombat14\\Documents\\Accounts\\accounts.txt", acc.ToString());
-                    WriteToFile("C:\\Users\\krazykombat14\\Documents\\Accounts\\usernames.txt", username);
-                }
+
+                else {
+                    SqlCommand command2 = new SqlCommand("INSERT INTO [Users] VALUES (@username, @pass)", connection);
+                    command2.Parameters.AddWithValue("@username", UsernameTextBox.Text);
+                    command2.Parameters.AddWithValue("@pass", PasswordAccBox.Password);
+                    command2.ExecuteNonQuery();
+                    }
+                reader.Close();
+                connection.Close();
             }
         }
 
@@ -63,48 +61,6 @@ namespace SignUpTest
             accountData();
         }
 
-        private static string ReadFile(string filePath)
-        {
-            if (File.Exists(filePath))
-            {
-                using (StreamReader sr = new StreamReader(filePath))
-                {
-                    string lines = sr.ReadToEnd();
-                    return lines;
-                }
-            }
-            else
-            {
-                throw new FileNotFoundException("*** ERROR FILE NOT FIND ***");
-            }
-        }
-
-        public static void WriteToFile(string filePath, string output)
-        {
-            if (filePath == null)
-            {
-                throw new ArgumentNullException("* FilePath Must Not Be Null*");
-            }
-            else if (output == null)
-            {
-                throw new ArgumentNullException("* Output Must Not Be Null *");
-            }
-            else if (!File.Exists(filePath))
-            {
-                using (StreamWriter sw = new StreamWriter(filePath, true))
-                {
-                    sw.WriteLine(output);
-                }
-            }
-            else if (File.Exists(filePath))
-            {
-                File.WriteAllText(filePath, output);
-            }
-            else
-            {
-                throw new DirectoryNotFoundException("* File Path Does Not Exist *");
-            }
-        }
     }
 }
 

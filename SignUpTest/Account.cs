@@ -17,8 +17,8 @@ namespace SignUpTest
         {
 
         }
-        private String username { get; set; }
-        private String password { get; set; }
+        public String username { get; set; }
+        public String password { get; set; }
 
         public override string ToString()
         {

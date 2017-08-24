@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SignUpTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="300">
+        Title="Sign Up" Height="250" Width="300">
     
     <StackPanel Background="DeepSkyBlue">
         <Label Background="White" Margin="10" Height="50" Content="Sign Up" HorizontalContentAlignment="Center"
