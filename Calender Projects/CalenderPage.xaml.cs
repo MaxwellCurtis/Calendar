@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,14 @@ namespace Calender_Projects
         public CalenderWindow()
         {
             InitializeComponent();
+
+            DateTimeFormatInfo fm = new DateTimeFormatInfo();
+            int currentMonthNumber = DateTime.Now.Month;
+            string currentMonth = fm.GetMonthName(currentMonthNumber);
+            string currentYear = DateTime.Now.Year.ToString();
+
+            MonthLabel.Content = currentMonth;
+            YearLabel.Content = currentYear;
         }
 
         private void AddEvent_Click(object sender, RoutedEventArgs e)

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calender_Projects"
         mc:Ignorable="d"
-        Title="Manage Lists Window" Height="480.216" Width="751.079">
+        Title="Manage Lists Window" Height="600" Width="1080">
     <Page.Resources>
         <Style TargetType="Button">
             <Setter Property="Button.Height" Value="30"/>
@@ -15,29 +15,31 @@
             <Setter Property="Label.FontSize" Value=" 18"/>
         </Style>
     </Page.Resources>
+    
     <Grid Background="LightSkyBlue">
-        <DockPanel Margin="0,0,1,401.5">
+        <DockPanel Margin="0,0,970,550">
             <Button x:Name="GoBackButton"
                     Content="Go Back"
                     Click="GoBackButton_Click"
-                    Margin="600 0 0 0"/>
+                    Margin="0 0 0 0"/>
         </DockPanel>
         <WrapPanel>
             <Label x:Name="List" 
                    Content="Your Lists"
-                   Margin="340 45 0 350"/>
-            <StackPanel Width="180"
-                        Height="284"
-                        Margin="-550 70 0 0"/>
-            <StackPanel Width="60"
-                        Height="284"
-                        Margin="-280 70 0 0"/>
-            <StackPanel Width="160"
-                        Height="284"
-                        Margin="-90 70 0 0"/>
-            <StackPanel Width="160"
-                        Height="284"
-                        Margin="15 70 0 0"/>
+                   Margin="500 45 0 350"
+                   FontSize="25"/>
+            <StackPanel Width="250"
+                        Height="400"
+                        Margin="-900 150 0 0"/>
+            <StackPanel Width="80"
+                        Height="400"
+                        Margin="-490 150 0 0"/>
+            <StackPanel Width="250"
+                        Height="400"
+                        Margin="-140 150 0 0"/>
+            <StackPanel Width="250"
+                        Height="400"
+                        Margin="35 150 0 0"/>
         </WrapPanel>
     </Grid>
 </Page>

@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Source="CalenderPage.xaml"
         Background="LightBlue"
-        Title="Our Calender Window" Height="600" Width="1080">
+        Title="Our Calender Window" Height="600" Width="1080"
+        ShowsNavigationUI="False">
 
 </NavigationWindow>

@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:Calender_Projects"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="1080"
-      Title="CalenderWindow">
+      Title="CalenderWindow"
+      ShowsNavigationUI="False">
 
     <Page.Resources>
         <Style TargetType="Label">
@@ -19,20 +20,27 @@
     </Page.Resources>
 
     <Grid Background="LightBlue">
-        <DockPanel Margin="0,0,270,452.5">
-            <Label   Content="Month"
-                     FontSize="28" Margin="0,14,0,-0.5"/>
-            <Label Content="Year"
-                   FontSize="28" Margin="0,14,0,-0.5" Width="64"/>
+        <DockPanel Margin="0,0,1,480">
+            <Label   x:Name="MonthLabel"
+                     FontSize="28"
+                     Height="50"
+                     Width="100"
+                     Margin="10 -20 0 0"/>
+            <Label x:Name="YearLabel"
+                   FontSize="28" 
+                   Margin="0 -20 0 0" 
+                   Width="100"
+                   Height="50"/>
             <Button x:Name="AddEvent" 
                     Content="+ Add Event"
-                    Margin="0 0 450 0"
+                    Margin="100 -20 450 0"
                     Click="AddEvent_Click"/>
         </DockPanel>
         <DockPanel Margin="0,68,271,0">
             <Label Content=" Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec"
                    FontSize="27"/>
         </DockPanel>
+
         <Grid Background="DodgerBlue" 
               Margin="5,122,268,7.5"
               ShowGridLines="True">
@@ -54,6 +62,31 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
         </Grid>
+        
+        <DockPanel Margin="0,121,269,349">
+            <Label Content="Sunday"
+                   FontSize="20"
+                   Margin="25 0 0 0"/>
+            <Label Content="Monday"
+                   FontSize="20"
+                   Margin="30 0 0 0"/>
+            <Label Content="Tuesday"
+                   FontSize="20"
+                   Margin="30 0 0 0"/>
+            <Label Content="Wednesday"
+                   FontSize="20"
+                   Margin="20 0 0 0"/>
+            <Label Content="Thursday"
+                   FontSize="20"
+                   Margin="15 0 0 0"/>
+            <Label Content="Friday"
+                   FontSize="20"
+                   Margin="40 0 0 0"/>
+            <Label Content="Saturday"
+                   FontSize="20"
+                   Margin="30 0 0 0"/>
+        </DockPanel>
+        
         <StackPanel Background="DeepSkyBlue"
                     Margin="819,7,6,6.5">
             <Button x:Name="ManageList"
@@ -62,24 +95,28 @@
                     Click="ManageList_Click"/>
             <Label Content="Title:"
                    Margin="0 3 126 0" Height="26"/>
-            <TextBox
-                     Margin="42,-18,48,0" Height="20"/>
+            <TextBox x:Name="ListTitle" 
+                     Margin="42,-18,48,0" 
+                     Height="20"/>
             <Label Content="Desc:"/>
-            <TextBox 
+            <TextBox x:Name="ListDescription" 
                      Height="128" 
                      Margin="13,0,11,0"/>
             <Label Content="List:" 
                    Margin="0,0,133,0"/>
-            <CheckBox Height="16" 
-                      Margin="35 -25 110 0"/>
+            <CheckBox x:Name="ListCheckbox"  
+                      Height="16" 
+                      Margin="35 -25 180 0"/>
             <Label Content="Checklist:"
                    Margin="60 -27 0 0"/>
-            <CheckBox Height="16"
-                      Margin="129 -25 0 0"/>
+            <CheckBox x:Name="ChecklistCheckbox"  
+                      Height="16"
+                      Margin="129 -25 90 0"/>
             <Label Content="Label:" 
                    Height="26" 
                    Margin="0,0,119,0"/>
-            <ComboBox Width="120"
+            <ComboBox x:Name="ListLabel"  
+                      Width="120"
                       Margin="40 -20 0 0">
             </ComboBox>
             <Label Content="Due Date:" 
@@ -89,7 +126,7 @@
             <Button x:Name="SaveList" 
                     Content="+ Add List"
                     Click="AddList_Click"
-                    Margin="0 0 0 0"/>
+                    Margin="0 10 0 0"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calender_Projects"
         mc:Ignorable="d"
-        Title="Create Event Page" Height="390.647" Width="655.036">
+        Title="Create Event Page" Height="600" Width="1080"
+        ShowsNavigationUI="False">
     <Page.Resources>
         <Style TargetType="Button">
             <Setter Property="Button.Height" Value="30"/>
@@ -18,8 +19,9 @@
             <Setter Property="ComboBox.Width" Value="150"/>
         </Style>
     </Page.Resources>
+    
     <Grid Background="LightSkyBlue">
-        <DockPanel Margin="0,0,-5,338.5">
+        <DockPanel Margin="0,0,363,550">
             <Button x:Name="SaveEvent"
                     Content="Save"
                     Margin="10 0 0 0"
@@ -29,42 +31,54 @@
                     Margin="0 0 450 0"
                     Click="GoBackEvent_Click"/>
         </DockPanel>
-        <StackPanel Margin="0,62,1,0">
-            <Label x:Name="EventNameLabel"
+        <StackPanel Margin="0 62 1 0"
+                    HorizontalAlignment="Center">
+            
+            <DockPanel Margin="0 0 0 20">
+                <Label x:Name="EventNameLabel"
                    Content="Event Name:"
-                   Margin="0 0 560 0"/>
-            <TextBox Width="400"
-                     Margin="0 -25 80 0"/>
+                   Margin="0 0 0 0"/>
+                <TextBox Width="400"
+                         Height="25"
+                         Margin="0 0 400 0"/>
+            </DockPanel>
+            
             <Label x:Name="StartLabel"
                    Content="Start"
-                   Margin="0 0 600 0"/>
+                   Margin="0 0 980 0"/>
             <ComboBox x:Name="StartBox" 
-                      Margin="0 0 490 0"/>
+                      Margin="0 0 860 0"/>
             <Label x:Name="EndLabel"
                    Content="End"
-                   Margin="0 0 600 0"/>
+                   Margin="0 0 980 0"/>
             <ComboBox x:Name="EndBox" 
-                      Margin="0 0 490 0"/>
+                      Margin="0 0 860 0"/>
+            
+            
             <Label x:Name="DurationLabel"
                    Content="Duration"
                    Margin="200 -50 360 22"/>
             <ComboBox x:Name="DurationBox" 
-                      Margin="0 -23 92 10"/>
+                      Margin="0 -23 460 10"/>
             <Label x:Name="RepeatLabel"
                    Content="Repeat"
                    Margin="200 -107 380 120"/>
             <ComboBox x:Name="RepeatBox" 
-                      Margin="0 -123 92 120"/>
+                      Margin="0 -123 460 120"/>
+            
+            
             <Label x:Name="ShowAsLabel"
                    Content="Show As"
                    Margin="400 -165 180 150"/>
             <ComboBox x:Name="ShowAsBox" 
-                      Margin="300 -155 0 200"/>
+                      Margin="300 -155 360 200"/>
+            
+            
             <Label x:Name="DescLabel"
                    Content="Description"
-                   Margin="0 -140 0 110"/>
-            <TextBox Width="630"
-                     Height="132"
+                   Margin="0 -120 0 110"/>
+            <TextBox Width="1000"
+                     Height="300"
                      Margin="10,-110,9,0"/>
         </StackPanel>
     </Grid>
