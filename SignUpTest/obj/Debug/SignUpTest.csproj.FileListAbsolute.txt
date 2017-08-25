@@ -12,3 +12,19 @@ c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debu
 c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest.csproj.GenerateResource.Cache
 c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest.exe
 c:\users\krazykombat14\documents\visual studio 2017\Projects\SignUpTest\obj\Debug\SignUpTest.pdb
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\bin\Debug\SignUpTest.exe
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\bin\Debug\SignUpTest.exe.config
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\MainWindow.g.cs
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\Window1.g.cs
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\App.g.cs
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest_MarkupCompile.cache
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest_MarkupCompile.lref
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\MainWindow.baml
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\Window1.baml
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest.g.resources
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest.Properties.Resources.resources
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest.csproj.GenerateResource.Cache
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest.exe
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest.pdb
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest.csprojResolveAssemblyReference.cache
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\bin\Debug\SignUpTest.pdb

@@ -26,8 +26,10 @@
         </DockPanel>
 
         <DockPanel Margin="10">
-            <Button x:Name="creatAccountButton" Click="click_account" Content="Create Account" Background="LightGray" Margin="10" 
-                    Width="100"/>
+            <Button Click="click_signin" Content="Create Account" Background="LightGray" Margin="10" 
+                    Width="100" HorizontalAlignment="Left"/>
+            <Button Click="click_login" Content="Sign In" Background="LightGray" Margin="10" 
+                    Width="100" HorizontalAlignment="Right"/>
         </DockPanel>
     </StackPanel>
 </Window>

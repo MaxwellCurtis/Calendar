@@ -1,9 +1,6 @@
-﻿using SignUpTest;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,19 +11,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SignUpTest
 {
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public void SignUpTest()
+        public Window1()
         {
             InitializeComponent();
         }
-
-        public void accountData()
+        public void accountCheck()
         {
             string userName = UsernameTextBox.Text;
             string passWord = PasswordAccBox.Password;
@@ -53,39 +48,33 @@ namespace SignUpTest
 
                     SqlCommand command = new SqlCommand("Select * FROM [Users] WHERE [UserName] = @username", connection);
                     command.Parameters.AddWithValue("@username", UsernameTextBox.Text);
-                    command.ExecuteNonQuery();
 
                     SqlDataReader reader = command.ExecuteReader();
-                    if (reader.Read() == true)
-                    {
-                        messages.Text = "username is taken";
-                    }
 
+                    if (reader.Read() == false)
+                    {
+                        messages.Text = "username does not exist";
+                    }
                     else
                     {
-                        messages.Text = "Account Created Return To Login";
-                        SqlCommand command2 = new SqlCommand("INSERT INTO [Users] VALUES (@username, @pass)", connection);
-                        command2.Parameters.AddWithValue("@username", UsernameTextBox.Text);
-                        command2.Parameters.AddWithValue("@pass", PasswordAccBox.Password);
-                        command2.ExecuteNonQuery();
+                        string password = reader["Password"].ToString();
+                        if (PasswordAccBox.Password == password)
+                        {
+                            messages.Text = "Logged In";
+                        }
+                        else
+                        {
+                            messages.Text = "Password is Incorrect";
+                        }
                     }
-                    reader.Close();
                     connection.Close();
                 }
             }
         }
 
-        private void click_signin(object sender, RoutedEventArgs e)
-        {
-            accountData();
-        }
-
         private void click_login(object sender, RoutedEventArgs e)
         {
-            Window1 win = new Window1();
-            win.Show();
-            this.Close();
+            accountCheck();
         }
     }
 }
-
