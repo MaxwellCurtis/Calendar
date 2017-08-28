@@ -28,3 +28,5 @@ C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTes
 C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest.pdb
 C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\SignUpTest.csprojResolveAssemblyReference.cache
 C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\bin\Debug\SignUpTest.pdb
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\Window2.g.cs
+C:\Users\krazykombat14\Desktop\Callender\Calendar\SignUpTest\obj\Debug\Window2.baml

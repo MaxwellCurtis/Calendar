@@ -21,68 +21,14 @@ namespace SignUpTest
 {
     public partial class MainWindow : Window
     {
-        public void SignUpTest()
+        public MainWindow()
         {
             InitializeComponent();
         }
 
-        public void accountData()
+        private void clickthisbitch(object sender, RoutedEventArgs e)
         {
-            string userName = UsernameTextBox.Text;
-            string passWord = PasswordAccBox.Password;
-
-            if (string.IsNullOrEmpty(userName) || string.IsNullOrWhiteSpace(userName))
-            {
-                messages.Text = "Username cannot be empty";
-            }
-            else if (string.IsNullOrEmpty(passWord) || string.IsNullOrWhiteSpace(passWord))
-            {
-                messages.Text = "Password cannot be empty";
-            }
-            else
-            {
-                using (SqlConnection connection = new SqlConnection())
-                {
-                    connection.ConnectionString =
-                    "Data Source=calenderserver.database.windows.net;" +
-                    "Initial Catalog=Calender;" +
-                    "User id=MCurtis;" +
-                    "Password=Rock1000;" +
-                    "MultipleActiveResultSets = true";
-                    connection.Open();
-
-                    SqlCommand command = new SqlCommand("Select * FROM [Users] WHERE [UserName] = @username", connection);
-                    command.Parameters.AddWithValue("@username", UsernameTextBox.Text);
-                    command.ExecuteNonQuery();
-
-                    SqlDataReader reader = command.ExecuteReader();
-                    if (reader.Read() == true)
-                    {
-                        messages.Text = "username is taken";
-                    }
-
-                    else
-                    {
-                        messages.Text = "Account Created Return To Login";
-                        SqlCommand command2 = new SqlCommand("INSERT INTO [Users] VALUES (@username, @pass)", connection);
-                        command2.Parameters.AddWithValue("@username", UsernameTextBox.Text);
-                        command2.Parameters.AddWithValue("@pass", PasswordAccBox.Password);
-                        command2.ExecuteNonQuery();
-                    }
-                    reader.Close();
-                    connection.Close();
-                }
-            }
-        }
-
-        private void click_signin(object sender, RoutedEventArgs e)
-        {
-            accountData();
-        }
-
-        private void click_login(object sender, RoutedEventArgs e)
-        {
-            Window1 win = new Window1();
+            Window2 win = new Window2();
             win.Show();
             this.Close();
         }

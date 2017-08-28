@@ -15,13 +15,17 @@ using System.Windows.Shapes;
 
 namespace SignUpTest
 {
-    public partial class Window1 : Window
+    /// <summary>
+    /// Interaction logic for Window2.xaml
+    /// </summary>
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
         }
-        public void accountCheck()
+
+        public void accountData()
         {
             string userName = UsernameTextBox.Text;
             string passWord = PasswordAccBox.Password;
@@ -48,38 +52,36 @@ namespace SignUpTest
 
                     SqlCommand command = new SqlCommand("Select * FROM [Users] WHERE [UserName] = @username", connection);
                     command.Parameters.AddWithValue("@username", UsernameTextBox.Text);
+                    command.ExecuteNonQuery();
 
                     SqlDataReader reader = command.ExecuteReader();
-
-                    if (reader.Read() == false)
+                    if (reader.Read() == true)
                     {
-                        messages.Text = "username does not exist";
+                        messages.Text = "username is taken";
                     }
+
                     else
                     {
-                        string password = reader["Password"].ToString();
-                        if (PasswordAccBox.Password == password)
-                        {
-                            messages.Text = "Logged In";
-                        }
-                        else
-                        {
-                            messages.Text = "Password is Incorrect";
-                        }
+                        messages.Text = "Account Created Return To Login";
+                        SqlCommand command2 = new SqlCommand("INSERT INTO [Users] VALUES (@username, @pass)", connection);
+                        command2.Parameters.AddWithValue("@username", UsernameTextBox.Text);
+                        command2.Parameters.AddWithValue("@pass", PasswordAccBox.Password);
+                        command2.ExecuteNonQuery();
                     }
+                    reader.Close();
                     connection.Close();
                 }
             }
         }
 
-        private void click_login(object sender, RoutedEventArgs e)
+        private void click_signin(object sender, RoutedEventArgs e)
         {
-            accountCheck();
+            accountData();
         }
 
-        private void click_signup(object sender, RoutedEventArgs e)
+        private void click_login(object sender, RoutedEventArgs e)
         {
-            Window2 win = new Window2();
+            Window1 win = new Window1();
             win.Show();
             this.Close();
         }

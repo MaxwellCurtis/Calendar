@@ -31,6 +31,8 @@
         <DockPanel>
             <Button Click="click_login" Background="LightGray" Margin="10" Content="Log In"
                     Width="100" />
+            <Button Click="click_signup" Background="LightGray" Margin="10" Content="Sign Up"
+                    Width="100" HorizontalAlignment="Right"/>
         </DockPanel>
     </StackPanel>
 </Window>
