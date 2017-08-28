@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("calendarwindow.xaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/fancy%20paper.jpg")]
 
 

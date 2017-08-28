@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calender_Projects"
         mc:Ignorable="d"
-        Source="CalenderPage.xaml"
+        Source="LoginWindow.xaml"
         Background="LightBlue"
         Title="Our Calender Window" Height="600" Width="1080"
         ShowsNavigationUI="False">
