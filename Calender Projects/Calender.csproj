@@ -63,6 +63,7 @@
     <Compile Include="CalenderPage.xaml.cs">
       <DependentUpon>CalenderPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Calender\CalenderCells.cs" />
     <Compile Include="IMainWindow.cs" />
     <Compile Include="IManageListsPage.cs" />
     <Compile Include="ISignUpWindow.cs" />

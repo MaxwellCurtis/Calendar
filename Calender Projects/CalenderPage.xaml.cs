@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calender_Projects.Calender;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -21,6 +22,10 @@ namespace Calender_Projects
     /// </summary>
     public partial class CalenderWindow : Page
     {
+        public SolidColorBrush gridBorder = new SolidColorBrush();
+
+        public CalenderCells[,] calenderCells;
+
         public CalenderWindow()
         {
             InitializeComponent();
@@ -32,6 +37,12 @@ namespace Calender_Projects
 
             MonthLabel.Content = currentMonth;
             YearLabel.Content = currentYear;
+
+        }
+
+        private void WeekDays()
+        {
+          
         }
 
         private void AddEvent_Click(object sender, RoutedEventArgs e)

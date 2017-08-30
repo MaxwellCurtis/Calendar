@@ -52,26 +52,8 @@
                    Content="End"
                    Margin="0 0 980 0"/>
             <ComboBox x:Name="EndBox" 
-                      Margin="0 0 860 0"/>
+                      Margin="0 0 860 150"/>
             
-            
-            <Label x:Name="DurationLabel"
-                   Content="Duration"
-                   Margin="200 -50 360 22"/>
-            <ComboBox x:Name="DurationBox" 
-                      Margin="0 -23 460 10"/>
-            <Label x:Name="RepeatLabel"
-                   Content="Repeat"
-                   Margin="200 -107 380 120"/>
-            <ComboBox x:Name="RepeatBox" 
-                      Margin="0 -123 460 120"/>
-            
-            
-            <Label x:Name="ShowAsLabel"
-                   Content="Show As"
-                   Margin="400 -165 180 150"/>
-            <ComboBox x:Name="ShowAsBox" 
-                      Margin="300 -155 360 200"/>
             
             
             <Label x:Name="DescLabel"

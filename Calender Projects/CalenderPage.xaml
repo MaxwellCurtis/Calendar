@@ -36,14 +36,11 @@
                     Margin="100 -20 450 0"
                     Click="AddEvent_Click"/>
         </DockPanel>
-        <DockPanel Margin="0,68,271,0">
-            <Label Content=" Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec"
-                   FontSize="27"/>
-        </DockPanel>
 
-        <Grid Background="DodgerBlue" 
-              Margin="5,122,268,7.5"
-              ShowGridLines="True">
+        <Grid x:Name="WeekDay"  
+                     Background="DodgerBlue" 
+                     Margin="5,122,268,402"
+                     ShowGridLines="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -53,40 +50,38 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height=".5*"/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
         </Grid>
-        
-        <DockPanel Margin="0,121,269,349">
+
+        <UniformGrid x:Name="theCalender" 
+                     Margin="5,160,268,17"
+                     Background="DodgerBlue">
+            
+        </UniformGrid>
+
+        <DockPanel Margin="0,121,269,343">
             <Label Content="Sunday"
                    FontSize="20"
-                   Margin="25 0 0 0"/>
+                   Margin="20 0 5 52" Width="82"/>
             <Label Content="Monday"
                    FontSize="20"
-                   Margin="30 0 0 0"/>
+                   Margin="30 0 0 56" Width="85"/>
             <Label Content="Tuesday"
                    FontSize="20"
-                   Margin="30 0 0 0"/>
+                   Margin="30,0,0,54" Width="89"/>
             <Label Content="Wednesday"
                    FontSize="20"
-                   Margin="20 0 0 0"/>
+                   Margin="8 0 0 52" Width="122"/>
             <Label Content="Thursday"
                    FontSize="20"
-                   Margin="15 0 0 0"/>
+                   Margin="7 0 0 40" Width="94"/>
             <Label Content="Friday"
                    FontSize="20"
-                   Margin="40 0 0 0"/>
+                   Margin="20 0 0 43" Width="66"/>
             <Label Content="Saturday"
                    FontSize="20"
-                   Margin="30 0 0 0"/>
+                   Margin="30,0,0,38" Width="94"/>
         </DockPanel>
-        
+
         <StackPanel Background="DeepSkyBlue"
                     Margin="819,7,6,6.5">
             <Button x:Name="ManageList"
