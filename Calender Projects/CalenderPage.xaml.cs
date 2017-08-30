@@ -24,25 +24,62 @@ namespace Calender_Projects
     {
         public SolidColorBrush gridBorder = new SolidColorBrush();
 
-        public CalenderCells[,] calenderCells;
+        public System.Globalization.Calendar[,] calenderCells;
+
+        public System.Globalization.Calendar calenderCell;
+
+        public object CalendarCells { get; private set; }
 
         public CalenderWindow()
         {
             InitializeComponent();
 
+            theCalender.Rows = 6;
+            theCalender.Columns = 7;
+
+            List<DateTime> allDates = new List<DateTime>();
+
+            DateTime startingDay = new DateTime(2017, 8, 1);
+            DateTime endingDay = new DateTime(2017, 8, 31);
+
+            int starting = startingDay.Day;
+            int ending = endingDay.Day;
+
+            for (DateTime date = startingDay; date == endingDay; date = date.AddDays(1))
+            {
+                allDates.Add(date);
+            }
+
+            TheCalender();
+
             DateTimeFormatInfo fm = new DateTimeFormatInfo();
             int currentMonthNumber = DateTime.Now.Month;
             string currentMonth = fm.GetMonthName(currentMonthNumber);
             string currentYear = DateTime.Now.Year.ToString();
+            string currentDay = DateTime.Now.Day.ToString();
 
             MonthLabel.Content = currentMonth;
             YearLabel.Content = currentYear;
+            DayLabel.Content = currentDay;
+
 
         }
 
-        private void WeekDays()
+        private void TheCalender()
         {
-          
+            gridBorder = Brushes.Black;
+
+            for (int i = 0; i < theCalender.Rows; i++)
+            {
+                for (int j = 0; j < theCalender.Columns; j++)
+                {
+                    Label calenderLabel = new Label();
+                    
+                    calenderLabel.BorderBrush = gridBorder;
+                    calenderLabel.BorderThickness = new Thickness(1);
+                    theCalender.Children.Add(calenderLabel);
+                }
+            }
         }
 
         private void AddEvent_Click(object sender, RoutedEventArgs e)
