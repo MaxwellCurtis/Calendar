@@ -33,12 +33,23 @@
         </DockPanel>
         <StackPanel Margin="0 62 1 0"
                     HorizontalAlignment="Center">
+
+            <DockPanel HorizontalAlignment="Center">
+                <TextBlock x:Name="messages"
+                           Margin="5"
+                           Background="White" 
+                           DockPanel.Dock="Top" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Top"
+                           FontSize="18"
+                            />
+            </DockPanel>
             
             <DockPanel Margin="0 0 0 20">
                 <Label x:Name="EventNameLabel"
                    Content="Event Name:"
                    Margin="0 0 0 0"/>
-                <TextBox Width="400"
+                <TextBox x:Name ="EventName" Width="400"
                          Height="25"
                          Margin="0 0 400 0"/>
             </DockPanel>
@@ -52,14 +63,14 @@
                    Content="End"
                    Margin="0 0 980 0"/>
             <ComboBox x:Name="EndBox" 
-                      Margin="0 0 860 150"/>
+                      Margin="0 0 860 150" SelectionChanged="EndBox_SelectionChanged"/>
             
             
             
             <Label x:Name="DescLabel"
                    Content="Description"
                    Margin="0 -120 0 110"/>
-            <TextBox Width="1000"
+            <TextBox x:Name="DescriptionBox" Width="1000"
                      Height="300"
                      Margin="10,-110,9,0"/>
         </StackPanel>

@@ -22,5 +22,16 @@ namespace Calender_Projects.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=calenderserver.database.windows.net;Initial Catalog=Calender;User ID=" +
+            "MCurtis;Password=Rock1000")]
+        public string CalenderConnectionString {
+            get {
+                return ((string)(this["CalenderConnectionString"]));
+            }
+        }
     }
 }
